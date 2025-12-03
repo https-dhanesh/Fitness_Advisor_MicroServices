@@ -1,6 +1,7 @@
 spring:
   data:
     mongodb:
+      database: activitydb
       uri: ${MONGO_ACTIVITY_URI}
   kafka:
     bootstrap-servers: ${KAFKA_HOST}:9092
