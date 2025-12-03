@@ -5,7 +5,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://${KEYCLOAK_HOST}/realms/Fitness-App
+          issuer-uri: https://${KEYCLOAK_HOST}/realms/Fitness-App
 
   cloud:
     gateway:
