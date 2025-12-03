@@ -3,3 +3,8 @@ spring:
     name: api-gateway
   config:
     import: optional:configserver:http://${CONFIG_HOST}:8888
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://${KEYCLOAK_HOST}/realms/fitness-realm/protocol/openid-connect/certs
