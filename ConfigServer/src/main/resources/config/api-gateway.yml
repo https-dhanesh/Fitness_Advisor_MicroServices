@@ -6,6 +6,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://${KEYCLOAK_HOST}/realms/Fitness-App
+
   cloud:
     gateway:
       routes:
