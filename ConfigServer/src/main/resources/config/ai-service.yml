@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: ${MONGO_ACTIVITY_URI}
+      uri: ${MONGO_RECOMMENDATION_URI}
   kafka:
     bootstrap-servers: ${KAFKA_HOST}:9092
     consumer:
