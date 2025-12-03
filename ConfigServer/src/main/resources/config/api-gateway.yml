@@ -11,19 +11,19 @@ spring:
     gateway:
       routes:
         - id: user-service
-          uri: lb://USER-SERVICE
+          uri: userservice-production-7b33.up.railway.app
           predicates:
             - Path=/api/users/**
             - Path=/api/users
 
         - id: activity-service
-          uri: lb://ACTIVITY-SERVICE
+          uri: activityservice-production-1daa.up.railway.app
           predicates:
             - Path=/api/activities/**
             - Path=/api/activities
 
         - id: ai-service
-          uri: lb://AI-SERVICE
+          uri: aiservice-production-51c1.up.railway.app
           predicates:
             - Path=/api/recommendations/**
             - Path=/api/recommendations
